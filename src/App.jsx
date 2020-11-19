@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from '@reach/router';
 import './App.scss';
 import Logo from './assets/img/weather_api.svg';
 import CityLibrary from './components/CityLibrary';
@@ -60,9 +61,15 @@ const App = () => {
         <nav className="navbar__container">
           <p className="navbar__logo">Tech Test</p>
           <ul>
+            <Link to="/">
             <li>Weather</li>
+            </Link>
+            <Link to="quiz-challenge">
             <li>Quiz</li>
+            </Link>
+            <Link to="football-challenge">
             <li>Football</li>
+            </Link>
           </ul>
         </nav>
       </header>
