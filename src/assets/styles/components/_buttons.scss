@@ -1,0 +1,9 @@
+@import '../abstracts/variables';
+
+.primaryBtn {
+    background-color: $primaryBlue;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
