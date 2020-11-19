@@ -36,7 +36,7 @@ const CityCard = (props) => {
         <>
         <div className={styles.city}>
             <header className={styles.cityHeader}>
-                <h3>London</h3>
+                <h3>London, UK</h3>
                 <p>{tempInLondon}&deg;C</p>
             </header>    
             <div className={styles.imgWrapper}>
@@ -59,7 +59,7 @@ const CityCard = (props) => {
         </div>
         <div className={styles.city}>
             <header className={styles.cityHeader}>
-                <h3>Bristol</h3>
+                <h3>Bristol, UK</h3>
                 <p>{tempInBristol}&deg;C</p>
             </header>  
             <div className={styles.imgWrapper}>
@@ -82,7 +82,7 @@ const CityCard = (props) => {
         </div>
         <div className={styles.city}>
             <header className={styles.cityHeader}>
-                <h3>Rome</h3>
+                <h3>Rome, Italy</h3>
                 <p>{tempInRome}&deg;C</p>
             </header>
             <div className={styles.imgWrapper}>

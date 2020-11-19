@@ -80,10 +80,12 @@ const App = () => {
         <div className="hero__content">
           <h1>Forecast Predictor</h1>
           <p>The most accurate forecast predictor online! Quickly find the forecast of your hometown or any place in the world!</p>
-          <button className="primaryBtn">View Forecast</button>
+          <button className="primaryBtn">
+            <a href="#forecast">View Forecast</a>
+          </button>
         </div>
       </main>
-      <section class="forecast__container">
+      <section class="forecast__container" id="forecast">
         <CityLibrary london={london} bristol={bristol} rome={rome} />
       </section>
     </>
