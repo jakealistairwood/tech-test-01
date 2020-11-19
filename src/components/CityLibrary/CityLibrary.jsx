@@ -11,9 +11,9 @@ const CityLibrary = (props) => {
     // )
 
     return (
-        <div>
+        <section className={styles.city__container}>
             <CityCard bristol={bristol} london={london} rome={rome} />    
-        </div>
+        </section>
     )
 }
 

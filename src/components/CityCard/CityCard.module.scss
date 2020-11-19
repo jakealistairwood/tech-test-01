@@ -1,2 +1,34 @@
 @import '../../assets/styles/abstracts/variables';
 @import '../../assets/styles/main';
+
+.city {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    padding: 25px;
+
+    .cityHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+            color: $midGrey;
+        }
+    }
+
+    .imgWrapper {
+        background-color: lightblue;
+        display: flex;
+        height: 200px;
+        width: 100%;
+    }
+}

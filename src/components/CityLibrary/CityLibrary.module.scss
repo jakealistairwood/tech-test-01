@@ -1,2 +1,10 @@
 @import '../../assets/styles/main';
 @import '../../assets/styles/abstracts/variables';
+
+.city__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}

@@ -1,38 +1,49 @@
 import React from 'react';
 import styles from './CityCard.module.scss';
+import RainSVG from '../../assets/img/undraw_Raining_re_4b55.svg';
 
 const CityCard = (props) => {
 
     const { bristol, rome, london } = props;
 
     console.log(bristol.main.temp);
+    console.log(london.main.temp);
+    console.log(rome.main.temp);
 
     // Kelvin to Celsius formula is:
     // K - 273.15 = _'C
 
-    const tempInBristol = Math.round(bristol.main.temp - 273.15);
+    const tempInBristol =  Math.round(bristol.main.temp - 273.15)
     const tempInLondon = Math.round(london.main.temp - 273.15);
     const tempInRome = Math.round(rome.main.temp - 273.15);
 
     return (
         <>
-        <div className={styles.londonCard}>
+        <div className={styles.city}>
             <header className={styles.cityHeader}>
                 <h3>London</h3>
                 <p>{tempInLondon}&deg;C</p>
             </header>    
+            <div clasName={styles.imgWrapper}>
+                <img src={RainSVG} alt="person-holding-umbrella"></img>
+            </div>
         </div>
-        <div className={styles.bristolCard}>
+        <div className={styles.city}>
             <header className={styles.cityHeader}>
                 <h3>Bristol</h3>
                 <p>{tempInBristol}&deg;C</p>
             </header>    
         </div>
-        <div className={styles.romeCard}>
+        <div className={styles.city}>
             <header className={styles.cityHeader}>
                 <h3>Rome</h3>
                 <p>{tempInRome}&deg;C</p>
-            </header>    
+            </header>
+            <div clasName={styles.imgWrapper}>
+                <img></img>
+            </div>
+            <div className={styles.cityForecast}>
+            </div>   
         </div>
         </>
     )
